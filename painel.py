@@ -10,7 +10,7 @@ opcao6 = ('Clareza na explicação', 'Domínio do conteúdo', 'Interatividade em
 opcao7 = ('Falta de clareza na explicação', 'Dificuldade em compreender o conteúdo', 'Falta de interatividade em sala de aula', 'Pouca disponibilidade para esclarecer dúvidas', 'Falta de suporte ao aprendizado', 'Falta de estímulo ao pensamento crítico', 'Falta de compreensão das necessidades dos alunos', 'Falta de motivação para o estudo', 'Feedback pouco construtivo', 'Dificuldade na comunicação', 'Falta de empatia com os alunos', 'Uso ineficaz de recursos didáticos', 'Falta de abertura a diferentes perspectivas', 'Desorganização das aulas', 'Outro (especifique)')
 
 
-subject = f"📝 Formulário de avalação do treinamento  st.secrets['treinamento']"
+subject = f"📝 Formulário de avalação do treinamento {st.secrets['treinamento']}"
 
 
 st.title(subject)
