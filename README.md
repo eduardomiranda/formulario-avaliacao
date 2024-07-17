@@ -23,5 +23,5 @@ source  myvenv/bin/activate
 
 # Execução do painel Streamlit
 ```sh
-streamlit run painel_streamlit.py 
+streamlit run painel.py 
 ```

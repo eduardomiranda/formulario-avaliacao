@@ -10,7 +10,7 @@ opcao6 = ('Clareza na explicação', 'Domínio do conteúdo', 'Interatividade em
 opcao7 = ('Falta de clareza na explicação', 'Dificuldade em compreender o conteúdo', 'Falta de interatividade em sala de aula', 'Pouca disponibilidade para esclarecer dúvidas', 'Falta de suporte ao aprendizado', 'Falta de estímulo ao pensamento crítico', 'Falta de compreensão das necessidades dos alunos', 'Falta de motivação para o estudo', 'Feedback pouco construtivo', 'Dificuldade na comunicação', 'Falta de empatia com os alunos', 'Uso ineficaz de recursos didáticos', 'Falta de abertura a diferentes perspectivas', 'Desorganização das aulas', 'Outro (especifique)')
 
 
-subject = '📝 Formulário de avalação do treinamento Preparação de Dados com Python 🐍'
+subject = f'📝 Formulário de avalação do treinamento  st.secrets['recipient']'
 
 
 st.title(subject)
@@ -27,7 +27,7 @@ col11, col12 = st.columns(2)
 st.title(' ')
 
 with col11:
-	duracao = st.selectbox( "O tempo de duração do treinamento foi?", opcao1)
+	duracao = st.selectbox( "O tempo de duração do treinamento foi?\n", opcao1)
 
 with col12:
 	conhecimento_instrutor = st.selectbox( "Em termos gerais, qual a sua percepção quanto ao conhecimento do instrutor nos temas abordados?", opcao1)
@@ -40,7 +40,7 @@ st.header('Qual o seu nível de satisfação com relação aos tópicos abaixo?'
 col21, col22, col23 = st.columns(3)
 
 with col21:
-	conteudo_disciplina = st.selectbox( "Conteúdo da disciplina?", opcao2)
+	conteudo_disciplina = st.selectbox( "Conteúdo da disciplina?\n", opcao2)
 
 with col22:
 	capacidade_professor_explicar_os_temas = st.selectbox( "Capacidade do professor em explicar os temas abordados?", opcao2)
