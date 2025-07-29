@@ -10,7 +10,12 @@ opcao6 = ('Clareza na explicação', 'Domínio do conteúdo', 'Interatividade em
 opcao7 = ('Falta de clareza na explicação', 'Dificuldade em compreender o conteúdo', 'Falta de interatividade em sala de aula', 'Pouca disponibilidade para esclarecer dúvidas', 'Falta de suporte ao aprendizado', 'Falta de estímulo ao pensamento crítico', 'Falta de compreensão das necessidades dos alunos', 'Falta de motivação para o estudo', 'Feedback pouco construtivo', 'Dificuldade na comunicação', 'Falta de empatia com os alunos', 'Uso ineficaz de recursos didáticos', 'Falta de abertura a diferentes perspectivas', 'Desorganização das aulas', 'Outro (especifique)')
 
 
+<<<<<<< HEAD
 subject = f'📝 Formulário de avalação do treinamento  st.secrets['recipient']'
+=======
+#subject = '📝 Formulário de avalação do treinamento Preparação de Dados com Python 🐍'
+subject = '📝 Formulário de avalação do treinamento Introdução ao Hadoop, Hive query language e Spark.'
+>>>>>>> refs/remotes/origin/main
 
 
 st.title(subject)
@@ -46,7 +51,8 @@ with col22:
 	capacidade_professor_explicar_os_temas = st.selectbox( "Capacidade do professor em explicar os temas abordados?", opcao2)
 
 with col23:
-	uso_python_notebook = st.selectbox( "Uso do Python Notebook como base para as aulas?", opcao2)
+	# uso_da_tecnologia = st.selectbox( "Uso do Python Notebook como base para as aulas?", opcao2)
+	uso_da_tecnologia = st.selectbox( "Uso do Amazon Elastic MapReduce (EMR) como ambiente para as aulas?", opcao2)
 
 
 
@@ -111,7 +117,7 @@ if st.button('Enviar'):
 	        'conhecimento_instrutor':conhecimento_instrutor,
 	        'conteudo_disciplina':conteudo_disciplina,
 	        'capacidade_professor_explicar_os_temas':capacidade_professor_explicar_os_temas,
-	        'uso_python_notebook':uso_python_notebook,
+	        'uso_da_tecnologia':uso_da_tecnologia,
 	        'expectativa_alcancada':expectativa_alcancada,
 	        'conteudo_organizado_facil_seguir':conteudo_organizado_facil_seguir,
 	        'treinamento_vai_ser_util_dia_a_dia':treinamento_vai_ser_util_dia_a_dia,
