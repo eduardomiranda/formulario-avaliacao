@@ -11,11 +11,15 @@ opcao7 = ('Falta de clareza na explicação', 'Dificuldade em compreender o cont
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 subject = f'📝 Formulário de avalação do treinamento  st.secrets['recipient']'
 =======
 #subject = '📝 Formulário de avalação do treinamento Preparação de Dados com Python 🐍'
 subject = '📝 Formulário de avalação do treinamento Introdução ao Hadoop, Hive query language e Spark.'
 >>>>>>> refs/remotes/origin/main
+=======
+subject = f"📝 Formulário de avalação do treinamento {st.secrets['treinamento']}"
+>>>>>>> b09d8dd4512d16c92ea83e641afbf9014238f4a3
 
 
 st.title(subject)
@@ -51,8 +55,7 @@ with col22:
 	capacidade_professor_explicar_os_temas = st.selectbox( "Capacidade do professor em explicar os temas abordados?", opcao2)
 
 with col23:
-	# uso_da_tecnologia = st.selectbox( "Uso do Python Notebook como base para as aulas?", opcao2)
-	uso_da_tecnologia = st.selectbox( "Uso do Amazon Elastic MapReduce (EMR) como ambiente para as aulas?", opcao2)
+	uso_python_notebook = st.selectbox( "Uso do Python Notebook como base para as aulas?", opcao2)
 
 
 
@@ -117,7 +120,7 @@ if st.button('Enviar'):
 	        'conhecimento_instrutor':conhecimento_instrutor,
 	        'conteudo_disciplina':conteudo_disciplina,
 	        'capacidade_professor_explicar_os_temas':capacidade_professor_explicar_os_temas,
-	        'uso_da_tecnologia':uso_da_tecnologia,
+	        'uso_python_notebook':uso_python_notebook,
 	        'expectativa_alcancada':expectativa_alcancada,
 	        'conteudo_organizado_facil_seguir':conteudo_organizado_facil_seguir,
 	        'treinamento_vai_ser_util_dia_a_dia':treinamento_vai_ser_util_dia_a_dia,
